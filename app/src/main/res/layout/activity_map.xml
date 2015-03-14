@@ -1,0 +1,27 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:map="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"
+          map:zOrderOnTop="false">
+        <AutoCompleteTextView
+            android:id="@+id/search_bar"
+            android:layout_width="500dp"
+            android:layout_height="76dp"
+            />
+        <ImageView android:id="@+id/pin"
+                android:layout_width="50dp"
+                android:layout_height="76dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:layout_marginTop="-38dp"
+                android:src="@drawable/pin"/>
+        <ImageView android:id="@+id/shadow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/shadow"/>
+</fragment>
